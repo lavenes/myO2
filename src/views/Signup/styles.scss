@@ -1,0 +1,44 @@
+@import "../../styles/lavenst.scss";
+
+.center-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    & h1 {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+
+    & span.desc {
+        margin-bottom: 24px;
+        display: block;
+        font-size: 14px;
+        color: $dark-2;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    & .form {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+
+        & .MuiTextField-root {
+            margin-bottom: 20px;
+        }
+    }
+
+    & span.action-label {
+        margin-top: 24px;
+        font-size: 14px;
+        color: $dark-2; 
+
+        & a {
+            color: rgb(0, 112, 225);
+            font-weight: 500;
+        }
+    }
+}

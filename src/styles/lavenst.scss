@@ -1,0 +1,66 @@
+@import "./common/fonts.scss";
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button.MuiButton-containedPrimary {
+    color: #fff;
+    background-color: rgb(0,122,255);
+    box-shadow: 0 3px 11px rgba(0,122,255,.4);
+    border-radius: 8px;
+
+    &:hover {
+        background-color:rgb(0,122,255);
+        box-shadow: 0 3px 11px rgba(0,122,255,.4);
+    }
+}
+
+button.MuiFab-extended.MuiFab-sizeMedium {
+    background-color: rgb(0,122,255);
+    box-shadow: 0 3px 11px rgba(0,122,255,.4);
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: rgb(0,122,255)!important;
+}
+
+.PrivateNotchedOutline-legendNotched-4 {
+    color: rgb(0,122,255)!important;
+}
+
+.view {
+    width: 1024px;
+    max-width: 1024px;
+    margin: auto;
+
+    @include mobile {
+        width: calc(100vw - 64px);
+        max-width: unset;
+    }
+
+    @include tablet {
+        width: calc(100vw - 64px);
+        max-width: calc(1024px - 256px);
+    }
+}
+
+html, body {
+    font-family: $default-font;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+
+    @include mobile {
+        padding:0 16px;
+    }
+
+    @include tablet {
+        padding:0 16px;
+    }
+}

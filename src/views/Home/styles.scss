@@ -1,0 +1,12 @@
+@import "../../styles/lavenst.scss";
+
+.card-container {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 24px;
+
+    @include mobile {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}   

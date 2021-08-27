@@ -1,0 +1,102 @@
+@import "../../styles/lavenst.scss";
+
+.card {
+    width: 100%;
+    cursor: pointer;    
+    box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    border-radius: 12px;
+    padding-bottom: 16px;
+    max-width: 300px;
+    position: relative;
+
+    @include mobile {
+        max-width: unset;
+    }
+
+    & .action-btn {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px 8px;
+        background-color: rgba(0,0,0,.25);
+        border-radius: 25px;
+        color: #fff;
+
+        & span {
+            font-size: 12px;
+        }
+
+        & .icon {
+            margin-right: 6px;
+            font-size: 14px;
+        }
+    }
+    
+    & .image {
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+    }
+
+    & h5 {
+        font-size: 18px;
+        margin: 0;
+    }
+    
+    & .title {
+        display: flex;
+        align-items: center;
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    & p {
+        font-size: 14px;
+        color: $dark-2;
+        margin: 0;
+        margin-top: 16px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    & .information-container {
+        display: flex;
+
+        & .information {
+            flex: 1;
+        }
+
+        & .status-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin-top: 16px;
+
+            & .status {
+                padding: 4px 16px;
+                border-radius: 25px;
+                font-size: 12px;
+                font-weight: 600;
+                position: absolute;
+                right: 16px;
+                top: 0;
+                white-space: nowrap;
+        
+                &.green {
+                    background-color: #9ff3d96e;
+                    color: #0f9e74;
+                }
+        
+                &.red {
+                    background-color: #f39f9f6e;
+                    color: #e82a2a;
+                }
+            }
+        }
+    }
+}  

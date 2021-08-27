@@ -1,0 +1,68 @@
+//COLORS
+$dark: #3c4043;
+$dark-2: #767676;
+$gray: #f1f3f4;
+$gray-2:#E8E8E8;
+$gray-3: $gray-2;
+$blue: #1D74FF;
+$blue-second: rgba(29, 116, 255, 0.10);
+$blue-shadow: 0 3px 10px rgba(29, 116, 255, .35);
+$primary-color: $blue;
+$primary-border-color: $blue;
+$disabled-background-color: $gray-2;
+$disabled-border-color: $gray-2;
+$disabled-checked-background-color: $gray-2;
+$disabled-checked-border-color: $gray-2;
+$active-opacity: .75;
+$disabled-font-color: $dark;
+$disabled-checked-font-color: $dark;
+
+//SIZE
+$headerBarHeight: 65px;
+$default-font: 'Google Sans';
+
+.color-variables {               
+    &.red {
+        background-color: #D50000;
+    }
+
+    &.pink {
+        background-color: #E67C73;
+    }
+
+    &.orange{
+        background-color: #F4511E;
+    }
+
+    &.yellow {
+        background-color: #F6BF26;
+    }
+
+    &.green {
+        background-color: #33B679;
+    }
+
+    &.darkgreen {
+        background-color: #0B8043;
+    }
+
+    &.blue {
+        background-color: #039BE5;
+    }
+
+    &.purple {
+        background-color: #3F51B5;
+    }
+
+    &.lightpurple {
+        background-color: #7986CB;
+    }
+
+    &.defaultpurple {
+        background-color: #8E24AA;
+    }
+
+    &.dark {
+        background-color: #616161;
+    }
+}
