@@ -20,11 +20,9 @@ const Home = (props) => {
             <CollapList opened title={districts[localStorage.getItem('district')].title} onAddNew={() => setRedirectAddNew(+localStorage.getItem('district') + 1)}>
                 <div className="card-container">
                     {o2[+localStorage.getItem('district')]?.map((item, a) => {
-                        if(item.uid === localStorage.getItem('uid')) { 
-                            return (
-                                <Card data={item} key={`o2-item-${a}`}/>
-                            )
-                        }
+                        return (
+                            <Card data={item} key={`o2-item-${a}`}/>
+                        )
                     })}
                 </div>
                 {o2[+localStorage.getItem('district')]?.length ? '' : <span style={{width: '100%', display: 'flex', justifyContent: 'center'}}>Chưa có nhà cung cấp tại quận này</span>}
@@ -36,11 +34,9 @@ const Home = (props) => {
                     <CollapList title={data.title} key={`col-list-${i}`} onAddNew={() => setRedirectAddNew(i + 1)}>
                         <div className="card-container">
                             {o2[i]?.map((item, a) => {
-                                if(item.uid === localStorage.getItem('uid')) { 
-                                    return (
-                                        <Card data={item} key={`o2-item-${a}`}/>
-                                    )
-                                }
+                                return (
+                                    <Card data={item} key={`o2-item-${a}`}/>
+                                )
                             })}
                         </div>
 
