@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b09ec11c.chunk.css",
-    "main.js": "/static/js/main.a77f8e32.chunk.js",
-    "main.js.map": "/static/js/main.a77f8e32.chunk.js.map",
+    "main.css": "/static/css/main.4a04a9cb.chunk.css",
+    "main.js": "/static/js/main.d09dbf87.chunk.js",
+    "main.js.map": "/static/js/main.d09dbf87.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c1edf1e2.js",
     "runtime-main.js.map": "/static/js/runtime-main.c1edf1e2.js.map",
     "static/js/2.9eee2e32.chunk.js": "/static/js/2.9eee2e32.chunk.js",
     "static/js/2.9eee2e32.chunk.js.map": "/static/js/2.9eee2e32.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.b09ec11c.chunk.css.map": "/static/css/main.b09ec11c.chunk.css.map",
+    "static/css/main.4a04a9cb.chunk.css.map": "/static/css/main.4a04a9cb.chunk.css.map",
     "static/js/2.9eee2e32.chunk.js.LICENSE.txt": "/static/js/2.9eee2e32.chunk.js.LICENSE.txt",
     "static/media/lavenst.scss": "/static/media/GoogleSans-ThinItalic.ac17f217.woff2"
   },
   "entrypoints": [
     "static/js/runtime-main.c1edf1e2.js",
     "static/js/2.9eee2e32.chunk.js",
-    "static/css/main.b09ec11c.chunk.css",
-    "static/js/main.a77f8e32.chunk.js"
+    "static/css/main.4a04a9cb.chunk.css",
+    "static/js/main.d09dbf87.chunk.js"
   ]
 }
