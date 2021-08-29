@@ -15,7 +15,7 @@ const Home = (props) => {
     if(!o2) return <LoadingScreen/>
 
     return (
-        <div  className="view">
+        <div  className="view home-view">
             <h2 style={{marginTop: 32, fontSize: 24, color: '#007aff'}}>Quận của bạn</h2>
             <CollapList opened title={districts[localStorage.getItem('district')].title} onAddNew={() => setRedirectAddNew(+localStorage.getItem('district') + 1)}>
                 <div className="card-container">

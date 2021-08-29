@@ -22,14 +22,14 @@ const Signup = (props) => {
                   id="combo-box-demo"
                   options={cities}
                   getOptionLabel={(option) => option.title}
-                  renderInput={(params) => <TextField {...params} label="Thành phố" variant="outlined" 
+                  renderInput={(params) => <TextField {...params} label="Thành phố hiện tại" variant="outlined" 
                   onSelect={(e) => setCity(e.target.value)} />}
                 />
                 <Autocomplete
                   id="combo-box-demo"
                   options={districts}
                   getOptionLabel={(option) => option.title}
-                  renderInput={(params) => <TextField {...params} label="Quận / huyện" variant="outlined" 
+                  renderInput={(params) => <TextField {...params} label="Quận / huyện quan tâm" variant="outlined" 
                   onSelect={(e) => setDistrict(e.target.value)}/>}
                 />
                 <TextField onChange={(e) => setPassword(e.target.value)} label="Mật khẩu" variant="outlined" type="password"/>

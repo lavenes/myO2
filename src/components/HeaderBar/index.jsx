@@ -3,6 +3,7 @@ import "./styles.scss";
 import {Link} from 'react-router-dom';
 import {Controller} from './controller';
 import {IoHomeOutline, IoList, IoNotificationsOutline, IoInformation,IoChevronBack} from 'react-icons/io5';
+import Logo from "./logo.svg";
 
 export const ChildHeaderBar = (props) => {
     return (
@@ -35,14 +36,14 @@ export const HeaderBar = (props) => {
                 <header>
                     <div className="logo">
                         <Link to="/">
-                            <h2>myO2</h2>
+                            <img src={Logo} height={32}/>
                         </Link>
                     </div>
                     <ul>
-                        <li onClick={() => setLocation('/')} className={`${location === '/' ? 'active' : ''}`}><IoHomeOutline className="icon"/><Link to="/">Trang chủ</Link></li>
-                        {fullAuthed ? <li onClick={() => setLocation('/management')} className={`${location === '/management' ? 'active' : ''}`}><IoList className="icon"/><Link to="/management">Quản lý nơi cung cấp Oxy</Link></li> : null}
-                        {fullAuthed ? <li onClick={() => setLocation('/request')} className={`${location === '/request' ? 'active' : ''}`}><IoNotificationsOutline className="icon"/><Link to="/request">Yêu cầu hỗ trợ Oxy</Link></li> : null}
-                        <li onClick={() => setLocation('/information')} className={`${location === '/information' ? 'active' : ''}`}><IoInformation className="icon"/><Link to="/information">Thông tin</Link></li>
+                        <Link to="/"><li onClick={() => setLocation('/')} className={`${location === '/' ? 'active' : ''}`}><IoHomeOutline className="icon"/><span>Trang chủ</span></li></Link>
+                        {fullAuthed ? <Link to="/management"><li onClick={() => setLocation('/management')} className={`${location === '/management' ? 'active' : ''}`}><IoList className="icon"/><span>Quản lý nơi cung cấp Oxy</span></li></Link> : null}
+                        {fullAuthed ? <Link to="/request"><li onClick={() => setLocation('/request')} className={`${location === '/request' ? 'active' : ''}`}><IoNotificationsOutline className="icon"/><span>Yêu cầu hỗ trợ Oxy</span></li></Link> : null}
+                        <Link to="/information"><li onClick={() => setLocation('/information')} className={`${location === '/information' ? 'active' : ''}`}><IoInformation className="icon"/><span>Thông tin</span></li></Link>
                     </ul>
                 </header>
             </div>

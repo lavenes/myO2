@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Firebase, Database, snapToArray, messaging} from '../../Global/Variables';
 
 export function Controller(props) {
@@ -6,6 +6,13 @@ export function Controller(props) {
     const [password, setPassword] = useState(null);
     const [success, setSuccess] = useState(false);
     const [loading, setLoading] = useState(false);
+
+    useEffect(() => {
+        if(localStorage.getItem('uid')) {
+            setLoading(false);
+            setSuccess(true);
+        }
+    }, [])
 
     const handleLogin = () => {
         if(!email || !password) {
@@ -23,6 +30,8 @@ export function Controller(props) {
                         localStorage.setItem('phone', result.val().phone);
                         localStorage.setItem('city', result.val().city);
                         localStorage.setItem('district', result.val().district);
+
+                        window.location.reload();
     
                         setLoading(false);
                         setSuccess(true);

@@ -19,6 +19,7 @@
             align-items: center;
 
             & h1 {
+                font-size: 22px;
             }
     
             & .status {
@@ -27,6 +28,7 @@
                 border-radius: 25px;
                 font-size: 14px;
                 font-weight: 600;
+                white-space: nowrap;
 
                 &.green {
                     background-color: #9ff3d96e;

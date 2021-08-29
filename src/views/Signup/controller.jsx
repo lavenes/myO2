@@ -120,6 +120,13 @@ export function Controller() {
         }
     ]
 
+    useEffect(() => {
+        if(localStorage.getItem('uid')) {
+            setLoading(false);
+            setSuccess(true);
+        }
+    }, [])
+
     //Đăng ký
     const handleSignup = () => {
         if(!email || !phone || !password) {
@@ -144,6 +151,8 @@ export function Controller() {
                     localStorage.setItem('email', email);
                     localStorage.setItem('uid', data.uid);
                     localStorage.setItem('district', data.district);
+
+                    window.location.reload();
     
                     setLoading(false);
                     setSuccess(true);

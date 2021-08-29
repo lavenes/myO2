@@ -8,7 +8,7 @@ export function Controller(props) {
     const [ward, setWard] = useState(null);
     const [name, setName] = useState(null);
     const [information, setInformation] = useState(null);
-    const [loading, setLoading] = useState(localStorage.getItem("requested").indexOf(props.match.params.id) > -1 ? true : false);
+    const [loading, setLoading] = useState(localStorage.getItem("requested")?.indexOf(props.match.params.id) > -1 ? true : false);
 
     const cities = [
         {
