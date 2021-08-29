@@ -4,9 +4,9 @@ const Info = (props) => {
     return (
         <div className="view">
             <h1 style={{color: 'rgb(0, 122, 255)', fontSize: 24, marginTop: 32}}>Thông tin dự án:</h1>
-            <span><b>Nhà phát triển: </b>Laven Studio</span><br/><br/>
+            <span><b>Nhà phát triển: </b>Lavenes</span><br/><br/>
             <span><b>Website: </b><a href="https://lavenes.com" target="_blank">https://lavenes.com</a></span><br/><br/>
-            <span><b>Facebook: </b><a href="https://www.facebook.com/nhatsdevil.mc" target="_blank">https://www.facebook.com/nhatsdevil.mc</a></span><br/><br/>
+            <span><b>Facebook cá nhân: </b><a href="https://www.facebook.com/nhatsdevil.mc" target="_blank">https://www.facebook.com/nhatsdevil.mc</a></span><br/><br/>
             <span><b>Phiển bản: </b>1.0.0</span><br/><br/>
             {/*
             <h2 style={{color: 'rgb(0, 122, 255)', fontSize: 24}}>Hãy ủng hộ nhà phát triển nhé!</h2>

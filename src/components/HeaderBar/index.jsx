@@ -10,8 +10,8 @@ export const ChildHeaderBar = (props) => {
         <div className="child-header-container">
             <div className="child-header">
                 <div className="copyright">
-                    <a href="https://lavenstudio.cf" target="_blank">
-                        <span>DESIGNED BY LAVEN STUDIO IN HO CHI MINH CITY</span>
+                    <a href="https://lavenes.com" target="_blank">
+                        <span>DESIGNED BY LAVENES IN HO CHI MINH CITY</span>
                     </a>
                 </div>
                 <div className="information">
